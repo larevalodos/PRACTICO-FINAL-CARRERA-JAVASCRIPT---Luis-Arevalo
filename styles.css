@@ -1,0 +1,132 @@
+body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.form-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+    width: 55%;
+}
+
+form {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: white;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.btn {
+    margin-top: 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.search-section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: right;
+    width: 40%;
+}
+
+.search-section div {
+    margin-bottom: 15px;
+}
+
+.btn-reiniciar {
+    background-color: #ff3b3b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-reiniciar:hover {
+    background-color: #d83434;
+}
+
+/* Table Styles */
+.table-section {
+    clear: both;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #3a3a3a;
+}
+
+td {
+    background-color: #2a2a2a;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Luis Arevalo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Biblioteca de los palitos de Arevalo</h1>
+        <h2>Contador de Libros: <span id="contadorLibros">0</span></h2>
+
+        <div class="form-section">
+            <form id="formularioLibros">
+                <fieldset>
+                    <legend>Formulario de ingresos</legend>
+                    <label for="id">ID:</label>
+                    <input type="number" id="id" name="id" min="10000000" max="99999999" autocomplete="off" required  >
+
+                    <label for="tipo">Tipo:</label>
+                    <select id="tipo" name="tipo">
+                        <option value="Computación">Computación</option>
+                        <option value="Matemáticas">Matemáticas</option>
+                        <option value="Psicología">Psicología</option>
+                        <option value="Literatura">Literatura</option>
+                    </select>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="off" required  >
+
+                    <label for="anio">Año:</label>
+                    <input type="number" id="anio" name="anio" max="3000" autocomplete="off" required  >
+
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" autocomplete="off" required  >
+
+                    <button type="submit" class="btn">Registrar</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="search-section">
+            <button id="reiniciarWeb" class="btn-reiniciar">Reiniciar Web</button>
+
+            <div>
+                <label for="filtroId">Filtrar por ID:</label>
+                <select id="filtroId">
+                    <option value="Todos">Todos</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="filtroNombre">Buscar por nombre:</label>
+                <input type="text" id="filtroNombre" placeholder="Buscar por nombre...">
+            </div>
+        </div>
+
+        <div class="table-section">
+            <h3>Tabla de registros</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tipo</th>
+                        <th>Nombre</th>
+                        <th>Año</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaLibros">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js" type="module"> </script>
+</body>
+</html>
